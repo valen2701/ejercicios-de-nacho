@@ -20,8 +20,17 @@ def new_people():
     lista_de_personas.insert(-1,"obama")
     print(lista_de_personas)
 
+def cancel_party():
+    for i in range(3):
+        cancelar = random.choice(lista_de_personas)
+        print(f"perdon {cancelar} al final no te puedo invitar")
+        time.sleep(1)
+        lista_de_personas.remove(cancelar)
+    print(lista_de_personas)
+
 def main():
     send_message()
     new_people()
+    cancel_party()
 
 main()
