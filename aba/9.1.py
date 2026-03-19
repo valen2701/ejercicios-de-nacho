@@ -15,9 +15,7 @@ def imprimir_lugares():
     time.sleep(1)
     print(lugares)
     time.sleep(1)
-    print(list(reversed(lugares)))
-    time.sleep(1)
-    print(list(reversed(lugares)))
+
 
 
 main()
